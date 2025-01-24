@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="gfg">Click me.</p>
+    <script>
+        document.getElementById("gfg").onclick = function() {
+            GFGfun()
+        };
+
+        function GFGfun() {
+            document.getElementById(
+                "gfg").innerHTML = "YOU CLICKED ME!";
+        }
+    </script>
+</body>
+<p id="gfg">Click me.</p>
+<script>
+    document.getElementById(
+        "gfg").addEventListener("click", GFGfun);
+
+    function GFGfun() {
+        document.getElementById(
+            "gfg").innerHTML = "YOU CLICKED ME!";
+        document.getElementById(
+            "gfg").style.color = 'red';
+    }
+</script>
+
+</html>
+
+</html>
