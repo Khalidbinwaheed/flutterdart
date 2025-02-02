@@ -3,11 +3,9 @@ void main() {
   while (i <= 10) {
     if (i % 2 == 0) {
       print(" Even:$i");
-      else{
-        print(i);
-      }
-
+    } else {
+      print(" Odd:$i");
     }
-    i++;
   }
+  i++;
 }
