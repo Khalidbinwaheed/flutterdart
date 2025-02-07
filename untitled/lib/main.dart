@@ -8,13 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // Remove Debug Banner
+      debugShowCheckedModeBanner: false, 
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Bano Qabil'),
+          title: Text('Beginner Flutter'),
           backgroundColor: const Color.fromARGB(255, 56, 185, 224),
         ),
-        
         body: Center(
           child: Container(
             width: 100,
@@ -22,9 +21,9 @@ class MyApp extends StatelessWidget {
             decoration: BoxDecoration(
               color: const Color.fromARGB(255, 56, 185, 224),
               borderRadius:
-                  BorderRadius.circular(10), // Make the container round
+                  BorderRadius.circular(10), 
             ),
-            child: Center(
+             child: Center(
               child: Text(
                 'Khalid bin \n Waheed',
                 textAlign: TextAlign.center,
