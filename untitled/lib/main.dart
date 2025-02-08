@@ -5,13 +5,15 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, 
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Beginner Flutter'),
+          title: const Text('Beginner Flutter'),
           backgroundColor: const Color.fromARGB(255, 56, 185, 224),
         ),
         body: Center(
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
               borderRadius:
                   BorderRadius.circular(10), 
             ),
-             child: Center(
+             child: const Center(
               child: Text(
                 'Khalid bin \n Waheed',
                 textAlign: TextAlign.center,
