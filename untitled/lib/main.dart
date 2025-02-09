@@ -8,9 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Rows and Columns Example',
+      debugShowCheckedModeBanner: false,
+      title: 'First App',
       home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 35, 205, 231),
         appBar: AppBar(
+          backgroundColor: Colors.blueGrey,
           title: Text('Rows and Columns Example'),
         ),
         body: Center(
