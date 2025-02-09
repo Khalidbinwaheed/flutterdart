@@ -5,39 +5,82 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, 
+      title: 'Rows and Columns Example',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Beginner Flutter'),
-          backgroundColor: const Color.fromARGB(255, 56, 185, 224),
+          title: Text('Rows and Columns Example'),
         ),
         body: Center(
-          child: Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 56, 185, 224),
-              borderRadius:
-                  BorderRadius.circular(10), 
-            ),
-             child: const Center(
-              child: Text(
-                'Khalid bin \n Waheed',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'This is a Column',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-            ),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.red,
+                    child: Center(child: Text('1')),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.green,
+                    child: Center(child: Text('2')),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.blue,
+                    child: Center(child: Text('3')),
+                  ),
+                ],
+              ),
+              SizedBox(height: 20),
+              Text(
+                'This is another Row',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.orange,
+                    child: Center(child: Text('4')),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.purple,
+                    child: Center(child: Text('5')),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                    child: Center(child: Text('6')),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
-        backgroundColor: const Color.fromARGB(144, 157, 214, 221),
       ),
     );
   }
